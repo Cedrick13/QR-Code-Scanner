@@ -3,6 +3,19 @@
 <head>
     <script src="qrious-master/qrious-master/dist/qrious.js"></script>
     <title>QR Code</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #qr {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <canvas id="qr"></canvas>
@@ -12,7 +25,7 @@
 <script>
     var qr = new QRious({
     element: document.getElementById('qr'),
-    value: 'FB:Ced IG:cedcllp ',
+    value: 'FB:ced pogi ',
     background: 'white', // background color
     foreground: 'black', // foreground color
     backgroundAlpha: 1,
